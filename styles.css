@@ -3784,6 +3784,12 @@ textarea.form-control-lg {
   display: block;
 }
 
+
+
+.navbar-brand:hover {
+  color: red !important; 
+}
+
 .navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;

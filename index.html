@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -24,6 +24,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
             <div class="container px-5">
+                <img src="assets/img/logonexus.png" alt="Logo de NexusGroup" class="me-2" style="max-height: 45px;">
                 <a class="navbar-brand fw-bold" href="#page-top">NexusGroup</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
@@ -34,12 +35,14 @@
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#features">¿Qué ofrecemos?</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#cta">Únete Ahora</a></li>
                     </ul>
-                    <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
-                        <span class="d-flex align-items-center">
-                            <i class="bi-chat-text-fill me-2"></i>
-                            <span class="small">Enviar Comentario</span>
-                        </span>
+                    <button class="btn btn-danger rounded-pill px-3 mb-2 mb-lg-0" id="openModalButton">
+                        <i class="bi-chat-text-fill me-2"></i>
+                        <span class="small">Enviar Comentario</span>
                     </button>
+                    
+                    
+                    
+                    
                 </div>
             </div>
         </nav>
@@ -50,32 +53,28 @@
                     <div class="col-lg-6">
                         <!-- Mashead text and app badges-->
                         <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                            <h1 class="display-1 lh-1 mb-3">Maximiza tus Ganancias con Inversiones Pasivas</h1>
+                            <h1 class="display-1 lh-1 mb-3">Maximiza tus ganancias con inversiones pasivas</h1>
                             <p class="lead fw-normal text-muted mb-5">¡Bienvenido a NexusGroup! Somos tu puerta de entrada al mundo de las inversiones pasivas, donde tu dinero trabaja arduamente para ti.</p>
-                            <a class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" href="#cta">Únete Ahora</a>
+                            <a class="btn btn-danger rounded-pill px-3 mb-2 mb-lg-0" href="#cta">Únete Ahora</a>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <!-- Masthead device mockup feature-->
                         <div class="masthead-device-mockup">
+                            
                             <!-- Círculo de color -->
-                            <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                <defs>
-                                    <linearGradient id="circleGradient" gradientTransform="rotate(45)">
-                                        <stop class="gradient-start-color" offset="0%"></stop>
-                                        <stop class="gradient-end-color" offset="100%"></stop>
-                                    </linearGradient>
-                                </defs>
-                                <circle cx="50" cy="50" r="50"></circle>
-                            </svg>
-                            <!-- Máscara de recorte circular para la imagen -->
-                            <svg style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                <defs>
-                                    <mask id="circleMask">
-                                        <circle cx="50" cy="50" r="50" fill="white" />
-                                    </mask>
-                                </defs>
-                            </svg>
+                        <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <!-- Definir el gradiente -->
+                                <linearGradient id="circleGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" stop-color="red"/> <!-- Color inicial: rojo -->
+                                    <stop offset="100%" stop-color="gray"/> <!-- Color final: gris -->
+                                </linearGradient>
+                            </defs>
+                            <!-- Aplicar el gradiente al círculo -->
+                            <circle cx="50" cy="50" r="50" fill="url(#circleGradient)"></circle>
+                        </svg>
+
                             <!-- Imagen con formas naturales -->
                             <img src="assets/img/plant.jpg" style="max-width: 100%; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 109px 68px 162px 56px; clip-path: url(#circleMask);" alt="Tu imagen nueva">
                         </div>
@@ -95,8 +94,8 @@
                             <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
                                     <linearGradient id="circleGradient" gradientTransform="rotate(45)">
-                                        <stop class="gradient-start-color" offset="0%" style="stop-color: #ff9900;"></stop>
-                                        <stop class="gradient-end-color" offset="100%" style="stop-color: #ff00ff;"></stop>
+                                        <stop class="gradient-start-color" offset="0%" style="stop-color: #ff0000;"></stop>
+                                        <stop class="gradient-end-color" offset="100%" style="stop-color: #a17b74;"></stop>
                                     </linearGradient>
                                 </defs>
                                 <circle cx="50" cy="50" r="50" fill="url(#circleGradient)"></circle>
@@ -122,7 +121,7 @@
                 <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
                     <div class="col-lg-5">
                         <h2 class="display-4 lh-1 mb-4">Opciones de Inversión Diversificadas</h2>
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">&nbsp;&nbsp;&nbsp;<i class="bi bi-graph-up"></i></div>
+                        <div class="feature bg-gradient bg-danger text-white rounded-3 mb-3"">&nbsp;&nbsp;&nbsp;<i class="bi bi-graph-up"></i></div>
                         <p class="lead fw-normal text-muted mb-5 mb-lg-0">Desde fondos mutuos y bonos hasta inversiones en mercados de valores y bienes raíces, en NexusGroup ofrecemos una amplia gama de opciones de inversión para adaptarnos a tus necesidades y objetivos financieros.</p>
                     </div>
                     <div class="col-sm-8 col-md-6">
@@ -131,8 +130,8 @@
                             <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
                                     <linearGradient id="circleGradient" gradientTransform="rotate(45)">
-                                        <stop class="gradient-start-color" offset="0%" style="stop-color: #ff9900;"></stop>
-                                        <stop class="gradient-end-color" offset="100%" style="stop-color: #ff00ff;"></stop>
+                                        <stop class="gradient-start-color" offset="0%" style="stop-color: #ff1e00;"></stop>
+                                        <stop class="gradient-end-color" offset="100%" style="stop-color: #504545;"></stop>
                                     </linearGradient>
                                 </defs>
                                 <circle cx="50" cy="50" r="50" fill="url(#circleGradient)"></circle>
@@ -157,7 +156,7 @@
                 <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
                     <div class="col-lg-5">
                         <h2 class="display-4 lh-1 mb-4">Gestión Profesional del Capital</h2>
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">&nbsp;&nbsp;&nbsp;<i class="bi bi-briefcase"></i></div>
+                        <div class="feature bg-gradient bg-danger text-white rounded-3 mb-3"">&nbsp;&nbsp;&nbsp;<i class="bi bi-briefcase"></i></div>
                         <p class="lead fw-normal text-muted mb-5 mb-lg-0">Nuestro equipo de expertos financieros se encarga de gestionar tu capital de manera eficiente y responsable, buscando constantemente las mejores oportunidades de inversión que maximicen tus ganancias.</p>
                     </div>
                     <div class="col-sm-8 col-md-6">
@@ -166,8 +165,8 @@
                             <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
                                     <linearGradient id="circleGradient" gradientTransform="rotate(45)">
-                                        <stop class="gradient-start-color" offset="0%" style="stop-color: #ff9900;"></stop>
-                                        <stop class="gradient-end-color" offset="100%" style="stop-color: #ff00ff;"></stop>
+                                        <stop class="gradient-start-color" offset="0%" style="stop-color: #ff0000;"></stop>
+                                        <stop class="gradient-end-color" offset="100%" style="stop-color: #615757;"></stop>
                                     </linearGradient>
                                 </defs>
                                 <circle cx="50" cy="50" r="50" fill="url(#circleGradient)"></circle>
@@ -193,7 +192,7 @@
                 <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
                     <div class="col-lg-5">
                         <h2 class="display-4 lh-1 mb-4">Transparencia y Seguridad</h2>
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">&nbsp;&nbsp;&nbsp;<i class="bi bi-lock"></i></div>
+                        <div class="feature bg-gradient bg-danger text-white rounded-3 mb-3">&nbsp;&nbsp;&nbsp;<i class="bi bi-lock"></i></div>
                         <p class="lead fw-normal text-muted mb-5 mb-lg-0">En NexusGroup, mantenemos altos estándares de transparencia y seguridad en todas nuestras operaciones, brindándote acceso a información detallada sobre tus inversiones en todo momento.</p>
                     </div>
                     <div class="col-sm-8 col-md-6">
@@ -202,8 +201,8 @@
                             <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
                                     <linearGradient id="circleGradient" gradientTransform="rotate(45)">
-                                        <stop class="gradient-start-color" offset="0%" style="stop-color: #ff9900;"></stop>
-                                        <stop class="gradient-end-color" offset="100%" style="stop-color: #ff00ff;"></stop>
+                                        <stop class="gradient-start-color" offset="0%" style="stop-color: #ff0000;"></stop>
+                                        <stop class="gradient-end-color" offset="100%" style="stop-color: #302d30;"></stop>
                                     </linearGradient>
                                 </defs>
                                 <circle cx="50" cy="50" r="50" fill="url(#circleGradient)"></circle>
