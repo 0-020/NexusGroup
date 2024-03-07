@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta con NexusGroup para obtener más información sobre nuestros servicios de asesoramiento financiero.">
+    <meta name="author" content="">
+
+    <title>Contacto - NexusGroup</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+        <div class="container px-5">
+            <img src="assets/img/logonexus.png" alt="Logo de NexusGroup" class="me-2" style="max-height: 45px;">
+            <a class="navbar-brand fw-bold" href="index.html#page-top">NexusGroup</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="index.html#features">¿Qué ofrecemos?</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="index.html#cta">Únete Ahora</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="servicios.html">Servicios</a></li>
+                </ul>
+                <button class="btn btn-danger rounded-pill px-3 mb-2 mb-lg-0" onclick="window.location.href='contacto.html'">
+                    <i class="bi-chat-text-fill me-2"></i>
+                    <span class="small">Enviar Comentario</span>
+                </button>      
+            </div>
+        </div>
+    </nav>
+    
+ <!-- Contact Form Section -->
+ <section class="bg-light" id="contact">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+            <div class="col-lg-6"> <!-- Reducimos el ancho para dar espacio a la imagen -->
+                <div class="contact-form">
+                    <h2>Contactanos</h2>
+                    <form id="form" class="contact-form">
+                        <div class="field">
+                            <label for="to_name">Nombre</label>
+                            <input type="text" name="to_name" id="to_name">
+                        </div>
+                        <div class="field">
+                            <label for="from_name">Correo electrónico</label>
+                            <input type="text" name="from_name" id="from_name">
+                        </div>
+                        <div class="field">
+                            <label for="message">Mensaje</label>
+                            <textarea name="message" id="message" rows="4"></textarea>
+                        </div>
+                        <input type="submit" id="button" value="Enviar Correo">
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6"> <!-- Colocamos la imagen en la segunda columna -->
+                <img src="assets/img/group.jpg" alt="seccion contacto" style="max-width: 100%;">
+            </div>
+        </div>
+    </div>
+</section>
+                    
+    <!-- Footer -->
+    <footer class="bg-black text-center py-5">
+        <div class="container px-5">
+            <div class="text-white-50 small">
+                <img src="assets/img/logonexus.png" alt="Logo de NexusGroup" class="me-2" style="max-height: 45px;">
+                <a class="navbar-brand fw-bold" href="/">NexusGroup</a><hr>
+                <div class="mb-2">&copy; NexusGroup 2024. Todos los Derechos Reservados.</div>
+                <a href="#!">Privacidad</a>
+                <span class="mx-1">&middot;</span>
+                <a href="#!">Términos</a>
+                <span class="mx-1">&middot;</span>
+                <a href="#!">FAQ</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS -->
+    <script src="js/scripts.js"></script>
+    <script src="js/envio-correo.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('waltcVFuUJOHRuOpH')
+  </script>
+
+</body>
+</html>

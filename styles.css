@@ -121,9 +121,107 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 
+/* phrases slider */
+
+.carrusel {
+  width: 100%;
+  overflow: hidden;
+}
 
 
+.carrusel h4 ,h5 {
+  color: rgb(182, 8, 8);
+}
 
+
+.frase {
+  display: none;
+}
+
+.frase {
+  display: none;
+  transition: transform 0.1s ease-in-out; 
+}
+
+.frase.active {
+  display: block;
+  display: center;
+}
+
+
+/* servicios page animation */
+
+/* Agregar animación para aparecer desde abajo */
+@keyframes appearFromBottom {
+  from {
+      transform: translateY(100%);
+  }
+  to {
+      transform: translateY(0);
+  }
+}
+
+/* Aplicar la animación al contenedor del contenido principal */
+#services .container {
+  animation: appearFromBottom 1s ease-out;
+}
+
+/* form contacto  */
+/* Estilos para el formulario de contacto */
+.contact-form {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-form .field {
+  margin-bottom: 15px;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #f10b03;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #882a0e;
+}
+
+/* Estilos para la imagen */
+.contact-form img {
+  max-width: 100%;
+  height: auto; 
+}
 
 
 

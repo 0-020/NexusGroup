@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicios de Asesoramiento Financiero ofrecidos por NexusGroup">
+    <meta name="author" content="">
+
+    <title>Servicios de Asesoramiento Financiero - NexusGroup</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+        <div class="container px-5">
+            <img src="assets/img/logonexus.png" alt="Logo de NexusGroup" class="me-2" style="max-height: 45px;">
+            <a class="navbar-brand fw-bold" href="index.html#page-top">NexusGroup</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="index.html#features">¿Qué ofrecemos?</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="index.html#cta">Únete Ahora</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="servicios.html">Servicios</a></li>
+                </ul>
+                <button class="btn btn-danger rounded-pill px-3 mb-2 mb-lg-0" onclick="window.location.href='contacto.html'">
+                    <i class="bi-chat-text-fill me-2"></i>
+                    <span class="small">Enviar Comentario</span>
+                </button>     
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <section class="bg-light" id="services">
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+                <div class="col-lg-5">
+                    <br><br>
+                    <h2 class="display-4 lh-1 mb-3">Servicios de Asesoramiento Financiero</h2>
+                    <div class="feature bg-gradient bg-danger text-white rounded-3 mb-3"">&nbsp;&nbsp;&nbsp;<i class="bi bi-graph-up"></i></div>
+                    <p class="lead fw-normal text-muted mb-3 mb-lg-0">
+                        En NexusGroup, nos destacamos como una holding company que actúa como el vínculo estratégico entre los inversionistas potenciales y los fondos de inversión. Entendemos que cada persona tiene necesidades financieras y objetivos únicos, y es por eso que ofrecemos asesoramiento personalizado para ayudarte a encontrar el fondo de inversión más adecuado.
+                    </p>
+                </div>
+                <div class="col-sm-8 col-md-6">
+                    <div class="masthead-device-mockup">
+                        <!-- Círculo de color -->
+                        <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="circleGradient" gradientTransform="rotate(45)">
+                                    <stop class="gradient-start-color" offset="0%" style="stop-color: #ff0000;"></stop>
+                                    <stop class="gradient-end-color" offset="100%" style="stop-color: #a17b74;"></stop>
+                                </linearGradient>
+                            </defs>
+                            <circle cx="50" cy="50" r="50" fill="url(#circleGradient)"></circle>
+                        </svg>
+                        <!-- Máscara de recorte circular para la imagen -->
+                        <svg style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <mask id="circleMask">
+                                    <circle cx="50" cy="50" r="50" fill="white" />
+                                </mask>
+                            </defs>
+                        </svg>
+                        <!-- Imagen con formas naturales -->
+                        <img src="assets/img/house.jpg" style="max-width: 100%; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 109px 68px 162px 56px; clip-path: url(#circleMask);" alt="Tu imagen nueva">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-center py-5">
+        <div class="container px-5">
+            <div class="text-white-50 small">
+                <img src="assets/img/logonexus.png" alt="Logo de NexusGroup" class="me-2" style="max-height: 45px;">
+            <a class="navbar-brand fw-bold" href="/">NexusGroup</a><hr>
+                <div class="mb-2">&copy; NexusGroup 2024. Todos los Derechos Reservados.</div>
+                <a href="#!">Privacidad</a>
+                <span class="mx-1">&middot;</span>
+                <a href="#!">Términos</a>
+                <span class="mx-1">&middot;</span>
+                <a href="#!">FAQ</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS -->
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -33,16 +33,13 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#features">¿Qué ofrecemos?</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="servicios.html">Servicios</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#cta">Únete Ahora</a></li>
                     </ul>
-                    <button class="btn btn-danger rounded-pill px-3 mb-2 mb-lg-0" id="openModalButton">
+                    <button class="btn btn-danger rounded-pill px-3 mb-2 mb-lg-0" onclick="window.location.href='contacto.html'">
                         <i class="bi-chat-text-fill me-2"></i>
                         <span class="small">Enviar Comentario</span>
-                    </button>
-                    
-                    
-                    
-                    
+                    </button>         
                 </div>
             </div>
         </nav>
@@ -52,41 +49,58 @@
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6">
                         <!-- Mashead text and app badges-->
-                        <div class="mb-5 mb-lg-0 text-center text-lg-start">
+                        <div class="mb-3 mb-lg-0 text-center text-lg-start">
                             <h1 class="display-1 lh-1 mb-3">Maximiza tus ganancias con inversiones pasivas</h1>
                             <p class="lead fw-normal text-muted mb-5">¡Bienvenido a NexusGroup! Somos tu puerta de entrada al mundo de las inversiones pasivas, donde tu dinero trabaja arduamente para ti.</p>
                             <a class="btn btn-danger rounded-pill px-3 mb-2 mb-lg-0" href="#cta">Únete Ahora</a>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 position-relative">
                         <!-- Masthead device mockup feature-->
                         <div class="masthead-device-mockup">
-                            
                             <!-- Círculo de color -->
-                        <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <!-- Definir el gradiente -->
-                                <linearGradient id="circleGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                                    <stop offset="0%" stop-color="red"/> <!-- Color inicial: rojo -->
-                                    <stop offset="100%" stop-color="gray"/> <!-- Color final: gris -->
-                                </linearGradient>
-                            </defs>
-                            <!-- Aplicar el gradiente al círculo -->
-                            <circle cx="50" cy="50" r="50" fill="url(#circleGradient)"></circle>
-                        </svg>
-
+                            <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <!-- Definir el gradiente -->
+                                    <linearGradient id="circleGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="red"/> <!-- Color inicial: rojo -->
+                                        <stop offset="100%" stop-color="gray"/> <!-- Color final: gris -->
+                                    </linearGradient>
+                                </defs>
+                                <!-- Aplicar el gradiente al círculo -->
+                                <circle cx="50" cy="50" r="50" fill="url(#circleGradient)"></circle>
+                            </svg>
                             <!-- Imagen con formas naturales -->
-                            <img src="assets/img/plant.jpg" style="max-width: 100%; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 109px 68px 162px 56px; clip-path: url(#circleMask);" alt="Tu imagen nueva">
+                            <img src="assets/img/plant.jpg" style="max-width: 100%; height: auto; border-radius: 109px 68px 162px 56px; clip-path: url(#circleMask);" alt="tu dinero crece">
                         </div>
-                    </div>   
-
-                        </header>   
+                    </div>
+                </div>
+            </div>
+        </header>
+      
+                       <!-- seccion info --> 
         <section class="bg-light" id="features">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
                     <div class="col-lg-5">
                         <h2 class="display-4 lh-1 mb-4">¿Qué ofrecemos en NexusGroup?</h2>
-                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">Desde fondos mutuos y bonos hasta inversiones en mercados de valores y bienes raíces, en NexusGroup ofrecemos una amplia gama de opciones de inversión para adaptarnos a tus necesidades y objetivos financieros.</p>
+                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">En NexusGroup, tenemos diversas opciones de inversión, desde fondos mutuos y bonos hasta inversiones en mercados de valores y bienes raíces, diseñado para satisfacer tus necesidades y metas financieras</p>
+                        <hr>
+                          <!-- Carrusel frases -->
+            <div class="carrusel">
+                <div class=" text-center frase active">
+                    <h4>Tu futuro financiero comienza hoy.</h4>
+                    <p>Invierte con inteligencia junto a NexusGroup.</p>
+                </div>
+                <div class="text-center frase">
+                    <h5>Despierta el potencial de tu patrimonio.</h5>
+                    <p>NexusGroup lo despierta con inversiones estratégicas.</p>
+                </div>
+                <div class="text-center frase">
+                    <h5>Construimos tu legado financiero.</h5>
+                    <p>Confía en NexusGroup, la llave que abre las puertas del éxito económico.</p>
+                </div>
+            </div>
                     </div>
                     <div class="col-sm-8 col-md-6">
                         <div class="masthead-device-mockup">
@@ -120,9 +134,9 @@
             <div class="container px-5">
                 <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
                     <div class="col-lg-5">
-                        <h2 class="display-4 lh-1 mb-4">Opciones de Inversión Diversificadas</h2>
+                        <h2 class="display-4 lh-1 mb-2">Opciones de Inversión Diversificadas</h2>
                         <div class="feature bg-gradient bg-danger text-white rounded-3 mb-3"">&nbsp;&nbsp;&nbsp;<i class="bi bi-graph-up"></i></div>
-                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">Desde fondos mutuos y bonos hasta inversiones en mercados de valores y bienes raíces, en NexusGroup ofrecemos una amplia gama de opciones de inversión para adaptarnos a tus necesidades y objetivos financieros.</p>
+                        <p class="lead fw-normal text-muted mb-3 mb-lg-0">Desde fondos mutuos y bonos hasta inversiones en mercados de valores y bienes raíces, en NexusGroup ofrecemos una amplia gama de opciones de inversión para adaptarnos a tus necesidades y objetivos financieros.</p>
                     </div>
                     <div class="col-sm-8 col-md-6">
                         <div class="masthead-device-mockup">
@@ -157,7 +171,7 @@
                     <div class="col-lg-5">
                         <h2 class="display-4 lh-1 mb-4">Gestión Profesional del Capital</h2>
                         <div class="feature bg-gradient bg-danger text-white rounded-3 mb-3"">&nbsp;&nbsp;&nbsp;<i class="bi bi-briefcase"></i></div>
-                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">Nuestro equipo de expertos financieros se encarga de gestionar tu capital de manera eficiente y responsable, buscando constantemente las mejores oportunidades de inversión que maximicen tus ganancias.</p>
+                        <p class="lead fw-normal text-muted mb-3 mb-lg-0">Nuestro equipo de expertos financieros se encarga de gestionar tu capital de manera eficiente y responsable, buscando constantemente las mejores oportunidades de inversión que maximicen tus ganancias.</p>
                     </div>
                     <div class="col-sm-8 col-md-6">
                         <div class="masthead-device-mockup">
@@ -186,94 +200,86 @@
                 </div>
             </div>
         </section>
-        
-        <section class="bg-light" id="transparency-security">
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                    <div class="col-lg-5">
-                        <h2 class="display-4 lh-1 mb-4">Transparencia y Seguridad</h2>
-                        <div class="feature bg-gradient bg-danger text-white rounded-3 mb-3">&nbsp;&nbsp;&nbsp;<i class="bi bi-lock"></i></div>
-                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">En NexusGroup, mantenemos altos estándares de transparencia y seguridad en todas nuestras operaciones, brindándote acceso a información detallada sobre tus inversiones en todo momento.</p>
-                    </div>
-                    <div class="col-sm-8 col-md-6">
-                        <div class="masthead-device-mockup">
-                            <!-- Círculo de color -->
-                            <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                <defs>
-                                    <linearGradient id="circleGradient" gradientTransform="rotate(45)">
-                                        <stop class="gradient-start-color" offset="0%" style="stop-color: #ff0000;"></stop>
-                                        <stop class="gradient-end-color" offset="100%" style="stop-color: #302d30;"></stop>
-                                    </linearGradient>
-                                </defs>
-                                <circle cx="50" cy="50" r="50" fill="url(#circleGradient)"></circle>
-                            </svg>
-                            <!-- Máscara de recorte circular para la imagen -->
-                            <svg style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                <defs>
-                                    <mask id="circleMask">
-                                        <circle cx="50" cy="50" r="50" fill="white" />
-                                    </mask>
-                                </defs>
-                            </svg>
-                            <!-- Imagen con formas naturales -->
-                            <img src="assets/img/great.jpg" style="max-width: 100%; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 119px 65px 152px 87px; clip-path: url(#circleMask);" alt="Tu imagen nueva">
-                        </div>
-                    </div>
+ 
+<!-- Transparencia y Seguridad section-->
+<section class="bg-light" id="security">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+            <div class="col-lg-5">
+                <h2 class="display-4 lh-1 mb-3">Transparencia y Seguridad</h2>
+                <div class="feature bg-gradient bg-danger text-white rounded-3 mb-3">&nbsp;&nbsp;&nbsp;<i class="bi bi-lock"></i></div>
+                <p class="lead fw-normal text-muted mb-3 mb-lg-0">En NexusGroup, mantenemos altos estándares de transparencia y seguridad en todas nuestras operaciones, brindándote acceso a información detallada sobre tus inversiones en todo momento.</p>
+            </div>
+            <div class="col-sm-8 col-md-6">
+                <div class="masthead-device-mockup">
+                    <!-- Círculo de color -->
+                    <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="circleGradient" gradientTransform="rotate(45)">
+                                <stop class="gradient-start-color" offset="0%" style="stop-color: #ff0000;"></stop>
+                                <stop class="gradient-end-color" offset="100%" style="stop-color: #302d30;"></stop>
+                            </linearGradient>
+                        </defs>
+                        <circle cx="50" cy="50" r="50" fill="url(#circleGradient)"></circle>
+                    </svg>
+                    <!-- Máscara de recorte circular para la imagen -->
+                    <svg style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <mask id="circleMask">
+                                <circle cx="50" cy="50" r="50" fill="white" />
+                            </mask>
+                        </defs>
+                    </svg>
+                    <!-- Imagen con formas naturales -->
+                    <img src="assets/img/great.jpg" style="max-width: 100%; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 119px 65px 152px 87px; clip-path: url(#circleMask);" alt="Tu imagen nueva">
                 </div>
             </div>
-        </section>   
-
-  <!-- Transparencia y Seguridad section-->
-  <section class="bg-light" id="security">
-    <!-- Transparencia y Seguridad content goes here -->
+        </div>
+    </div>
 </section>
+
 <!-- Testimonios de Clientes section-->
-<section class="testimonials">
+<section class="testimonials bg-light">
     <div class="container px-5">
         <div class="row gx-5 justify-content-center">
-            <div class="col-lg-8">
-                <h2 class="text-center display-4 lh-1 mb-5">
-                    Testimonios de Clientes
-                    <span class="float-end">
-                        <i class="bi bi-chat-right-quote-fill text-primary fs-1"></i>
-                    </span>
-                </h2>
-                             
+            <div class="col-lg-8 text-center">
+                <h2 class="display-4 lh-1 mb-3">Testimonios de Clientes</h2>
+                <i class="bi bi-chat-right-quote-fill text-danger fs-1 mb-4"></i>
             </div>
         </div>
         <div class="row gx-5 justify-content-center">
-            <div class="col-lg-4 mb-5">
+            <div class="col-lg-4 mb-3">
                 <div class="card testimonial-card">
                     <div class="card-body">
                         <p class="card-text">¡Gracias por ofrecer un producto tan excelente! ¡Nos encantó trabajar contigo y todo el equipo, y te recomendaremos a otros!</p>
                     </div>
                     <div class="card-footer d-flex align-items-center justify-content-between">
                         <div class="small text-muted">
-                            - Nombre1 Apellido1, Ciudad1
+                            - Alejandor Hernandez, Bogotá
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 mb-5">
+            <div class="col-lg-4 mb-3">
                 <div class="card testimonial-card">
                     <div class="card-body">
                         <p class="card-text">El equipo completo fue de gran ayuda para armar las cosas para nuestra empresa y marca. ¡Los contrataremos nuevamente en el futuro cercano para trabajos adicionales!</p>
                     </div>
                     <div class="card-footer d-flex align-items-center justify-content-between">
                         <div class="small text-muted">
-                            - Nombre2 Apellido2, Ciudad2
+                            - Luca Romano, Montevideo
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 mb-5">
+            <div class="col-lg-4 mb-3">
                 <div class="card testimonial-card">
                     <div class="card-body">
                         <p class="card-text">¡Estamos muy contentos con los resultados! El servicio brindado fue de primera clase y todo el equipo fue muy profesional en su enfoque hacia nuestro proyecto.</p>
                     </div>
                     <div class="card-footer d-flex align-items-center justify-content-between">
                         <div class="small text-muted">
-                            - Nombre3 Apellido3, Ciudad3
+                            - Elena Petrova, Barcelona
                         </div>
                     </div>
                 </div>
@@ -282,14 +288,14 @@
     </div>
 </section>
 
-        <!-- Call to action section-->
+     <!-- Call to action section-->
         <section class="cta" id="cta">
             <div class="cta-content">
                 <div class="container px-5">
-                    <h2 class="text-white display-1 lh-1 mb-4">
+                    <h2 class="text-white display-1 lh-1 mb-2">
                         ¡Únete Ahora y Maximiza tus Ganancias!
                     </h2>
-                    <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="#!">Comienza Ahora</a>
+                    <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="contacto.html">Comienza Ahora</a>
                 </div>
             </div>
         </section>
@@ -297,6 +303,8 @@
         <footer class="bg-black text-center py-5">
             <div class="container px-5">
                 <div class="text-white-50 small">
+                    <img src="assets/img/logonexus.png" alt="Logo de NexusGroup" class="me-2" style="max-height: 45px;">
+                <a class="navbar-brand fw-bold" href="#page-top">NexusGroup</a><hr>
                     <div class="mb-2">&copy; NexusGroup 2024. Todos los Derechos Reservados.</div>
                     <a href="#!">Privacidad</a>
                     <span class="mx-1">&middot;</span>
@@ -305,67 +313,15 @@
                     <a href="#!">FAQ</a>
                 </div>
             </div>
-
         </footer>
-        <!-- Feedback Modal-->
-        <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header bg-gradient-primary-to-secondary p-4">
-                        <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">Enviar Comentario</h5>
-                        <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body border-0 p-4">
-                        
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Tu Nombre..." data-sb-validations="required" />
-                                <label for="name">Nombre Completo</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">Se requiere un nombre.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="nombre@ejemplo.com" data-sb-validations="required,email" />
-                                <label for="email">Correo Electrónico</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">Se requiere un correo electrónico.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">El correo electrónico no es válido.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Ingresa tu mensaje aquí..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Mensaje</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">Se requiere un mensaje.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">falta implementar envio </div>
-                                    MODAL DE PRUEBA (Ecribir ajax js que envie correo a mail)
-                                    <br />
-                                    
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">¡Error al enviar el mensaje!</div></div>
-                            <!-- Submit Button-->
-                            <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg disabled" id="submitButton" type="submit">Enviar</button></div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+      
+        
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="js/script-frases.js"></script>
+
       
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
