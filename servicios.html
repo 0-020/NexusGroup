@@ -32,8 +32,9 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                     <li class="nav-item"><a class="nav-link me-lg-3" href="index.html#features">¿Qué ofrecemos?</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="index.html#cta">Únete Ahora</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="index.html#cta">Únete Ahora</a></li>
+                   
                 </ul>
                 <button class="btn btn-danger rounded-pill px-3 mb-2 mb-lg-0" onclick="window.location.href='contacto.html'">
                     <i class="bi-chat-text-fill me-2"></i>
@@ -57,24 +58,23 @@
                 </div>
                 <div class="col-sm-8 col-md-6">
                     <div class="masthead-device-mockup">
-                        <!-- Círculo de color -->
-                        <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="circleGradient" gradientTransform="rotate(45)">
-                                    <stop class="gradient-start-color" offset="0%" style="stop-color: #ff0000;"></stop>
-                                    <stop class="gradient-end-color" offset="100%" style="stop-color: #a17b74;"></stop>
-                                </linearGradient>
-                            </defs>
-                            <circle cx="50" cy="50" r="50" fill="url(#circleGradient)"></circle>
-                        </svg>
-                        <!-- Máscara de recorte circular para la imagen -->
-                        <svg style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <mask id="circleMask">
-                                    <circle cx="50" cy="50" r="50" fill="white" />
-                                </mask>
-                            </defs>
-                        </svg>
+                       
+                        <!-- grafica gradinet detras de la imagen  -->
+                    <svg class="chart" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="chartGradient" gradientTransform="rotate(90)">
+                                        <stop offset="0%" stop-color="#FF0000"/>
+                                        <stop offset="100%" stop-color="#C0A8A8"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M20,180 
+                                        L60,120 
+                                        L100,160 
+                                        L140,60 
+                                        L180,100" fill="none" stroke="url(#chartGradient)" stroke-width="5" />
+                                        <!-- puntos de la grafica -->
+                                <polygon points="180,100 185,08 175,88," fill="#9C1919" />
+                            </svg>                        
                         <!-- Imagen con formas naturales -->
                         <img src="assets/img/house.jpg" style="max-width: 100%; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 109px 68px 162px 56px; clip-path: url(#circleMask);" alt="Tu imagen nueva">
                     </div>

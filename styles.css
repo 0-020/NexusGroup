@@ -11359,3 +11359,16 @@ footer a:hover, footer a:active, footer a:focus {
 .masthead-device-mockup {
   margin-bottom: -5rem; 
 }
+
+
+/* que ofrecemos en nexus group */
+
+.nexustitle {
+  font-family: "Kanit", -apple-system,
+   BlinkMacSystemFont, "Segoe UI", 
+   Roboto, "Helvetica Neue", Arial, 
+   sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol",
+     "Noto Color Emoji";
+  font-weight: 700;
+}
