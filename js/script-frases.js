@@ -1,14 +1,17 @@
 
 // Slider para cambiar de frase cada 4 segundos 
 
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-document.addEventListener('DOMContentLoaded', function() {
-    let index = 0;
-    const frases = document.querySelectorAll('.frase');
-    
-    setInterval(function() {
-        frases.forEach(frase => frase.classList.remove('active'));
-        frases[index].classList.add('active');
-        index = (index + 1) % frases.length;
-    }, 4500); 
-});
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
