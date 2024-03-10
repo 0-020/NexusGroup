@@ -85,6 +85,8 @@
   box-sizing: border-box;
 }
 
+
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
@@ -11372,3 +11374,33 @@ footer a:hover, footer a:active, footer a:focus {
      "Noto Color Emoji";
   font-weight: 700;
 }
+
+
+
+/* div info */
+
+.info-div {
+  margin-top: 5px; 
+}
+
+section {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.masthead-device-mockup img {
+  margin-top: -16px; 
+}
+
+
+.section {
+  padding-top: 2px; 
+  padding-bottom: 2px;
+}
+
+
+.features {
+  margin-top: 8px; 
+  margin-bottom: 8px; 
+}
+
